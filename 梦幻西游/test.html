@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg1{
+            position: absolute;
+            left: 0;
+            top: 0;
+            animation: bgMove 20s linear infinite;
+        }
+        .bg2{
+            position: absolute;
+            left: -1920px;
+            top: 0;
+            animation: bgMove 20s linear infinite;
+        }
+        @keyframes bgMove{
+            0%{
+                /* transform: translateX(0); */
+                margin-left: 0%;
+            }
+            100%{
+                /* transform: translateX(100%); */
+                margin-left: 100%;
+            }
+        }
+
+        .container div{
+            float: left;
+        }
+        .step-wk{
+            width: 200px;
+            height: 180px;
+            overflow: hidden;
+            position: relative;
+            margin-top: 400px;
+            margin-left: 300px;
+        }
+        .step-wk img{
+            position: absolute;
+            animation: walking 1s steps(8) infinite;
+        }
+        @keyframes walking{
+            from{
+                left: 0;
+            }
+            to{
+                left: -1600px;
+            }
+        }
+        .step-ts{
+            width: 170px;
+            height: 240px;
+            overflow: hidden;
+            position: relative;
+            margin-top: 370px;
+            margin-left: 20px;
+        }
+        .step-ts img{
+            position: absolute;
+            animation: walking-2 1s steps(8) infinite;
+        }
+        @keyframes walking-2{
+            from{
+                left: 0;
+            }
+            to{
+                left: -1360px;
+            }
+        }
+        .step-bj{
+            width: 200px;
+            height: 180px;
+            overflow: hidden;
+            position: relative;
+            margin-top: 400px;
+            margin-left: 35px;
+        }
+        .step-bj img{
+            position: absolute;
+            animation: walking-3 1s steps(8) infinite;
+        }
+        @keyframes walking-3{
+            from{
+                left: 0;
+            }
+            to{
+                left: -1600px;
+            }
+        }
+        .step-ss{
+            width: 210px;
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+            margin-top: 400px;
+            margin-left: 0px;
+        }
+        .step-ss img{
+            position: absolute;
+            animation: walking-4 1s steps(8) infinite;
+        }
+        @keyframes walking-4{
+            from{
+                left: 0;
+            }
+            to{
+                left: -1680px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img class="bg1" src="./images/bg.jpg" alt="">
+    <div class="bg">
+        <img class="bg2" src="./images/bg.jpg" alt="">
+    </div>
+    <div class="container">
+        <div class="step-wk">
+            <img src="./images/wk.png" alt="">
+        </div>
+        <div class="step-ts">
+            <img src="./images/ts.png" alt="">
+        </div>
+        <div class="step-bj">
+            <img src="./images/bj.png" alt="">
+        </div>
+        <div class="step-ss">
+            <img src="./images/ss.png" alt="">
+        </div>
+    </div>
+    
+</body>
+</html>
